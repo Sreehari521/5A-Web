@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+:root{
+    --color: lightgreen;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+body{
+    background: var(--color);
+}
+span{
+    color: transparent;
+}
+h1{
+    font-weight: 600;
+    animation: animate1 6s infinite linear;
+}
+@keyframes animate1{
+    25%{
+        color: blue;
+    }
+    50%{
+        color: yellow;
+    }
+    75%{
+        color: red;
+    }
+    100%{
+        color: darkgreen;
+    }
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+section{
+    background: url(school1.jpg);
+    background-position: center;
+    background-size: cover;
+    color: black;
+    animation: animate2 12s linear infinite;
+}
+@keyframes animate2{
+    25%{
+        background: url(school1.jpg);
+        background-position: center;
+        background-size: cover;
+        color: black;
+    }
+    50%{
+        background: url(school2.jpg);
+        background-position: center;
+        background-size: cover;
+        color: black;
+    }
+    75%{
+        background: url(school3.jpg);
+        background-position: center;
+        background-size: cover;
+        color: black;
+    }
+    100%{
+        background: url(school4.jpg);
+        background-position: center;
+        background-size: cover;
+        color: black;
+    }
+}
